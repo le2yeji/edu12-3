@@ -1,7 +1,7 @@
 #
 # Build stage
 #
-FROM ghcr.io/shclub/node:14.19.3-alpine as build
+FROM ghcr.io/le2yeji/node:14.19.3-alpine as build
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
