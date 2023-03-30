@@ -19,7 +19,7 @@ RUN npm run build
 # Package stage
 #
 # production environment
-FROM ghcr.io/shclub/nginx:stable-alpine
+FROM ghcr.io/le2yeji/nginx:stable-alpine
 
 ENV TZ Asia/Seoul
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
